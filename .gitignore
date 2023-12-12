@@ -5,6 +5,10 @@
 /tmp
 /out-tsc
 /bazel-out
+/src/assets/media
+/src/environments/
+/src/app/db
+
 
 # Node
 /node_modules
@@ -19,6 +23,7 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+
 
 # Visual Studio Code
 .vscode/*
@@ -40,3 +45,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

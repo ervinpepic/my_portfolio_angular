@@ -1,0 +1,74 @@
+<div class="container">
+
+  <div class="p-5 mb-4 rounded-3">
+    <div class="container-fluid py-5" #scrollTop>
+      <h3
+        class="text-xl-start text-lg-start text-md-start text-center text-muted f-w-600"
+      >
+        Certificates & Awards
+      </h3>
+      <p
+        class="lead text-xl-start text-lg-start text-md-start text-center text-muted mt-2"
+      >
+        This page showcases my achievements in the field of programming through
+        certificates and awards. Each recognition represents a milestone in my
+        journey, reflecting my dedication to mastering various programming
+        languages and skills.
+      </p>
+
+      <div class="row">
+        <div class="col text-xl-end text-lg-end text-md-end text-center">
+          <a routerLink="/" class="btn btn-outline-light">Go back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-skeleton-card [loading]="loading" [skeletonCount]="6"></app-skeleton-card>
+
+  <div *ngFor="let school of certificates">
+
+    <div class="row">
+      <div class="col">
+        <h4
+          class="text-xl-start text-lg-start text-center text-muted f-w-600 mt-5"
+        >
+          {{ school.schoolName }}
+        </h4>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div
+        *ngFor="let certificate of school.certificates"
+        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3"
+      >
+
+        <div class="card card-bg-dark" style="width: auto">
+          <div class="card-body">
+            <h5 class="card-title">
+              {{ certificate.title }}
+            </h5>
+            <h6 class="card-subtitle">
+              {{ certificate.subtitle }}
+            </h6>
+            <p class="card-text">
+              {{ certificate.description }}
+            </p>
+            <a href="{{ certificate.url }}" class="text-link certificate-link"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <button 
+    *ngIf="showScrollToTopButton" 
+    class="btn btn-outline-light mb-5 scroll-to-top-button" 
+    (click)="onScrollToTop()">
+      <i class="bi bi-arrow-up-circle"></i>
+  </button>
+</div>

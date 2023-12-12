@@ -1,0 +1,28 @@
+.certificate-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.card-bg-dark {
+  color: #d8dadd;
+  background-color: #404959;
+}
+
+.text-muted {
+  font-family: sans-serif;
+  color: #d8dadd !important;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  opacity: 0.4;
+  color: #ebecee;
+  transition: 0.3s;
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 50px; /* Adjust the distance from the bottom */
+  right: 30px; /* Adjust the distance from the right */
+  z-index: 1000; /* Adjust the z-index if needed to ensure it's above other elements */
+}

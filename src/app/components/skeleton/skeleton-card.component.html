@@ -1,0 +1,35 @@
+<!-- skeleton-card.component.html -->
+<div *ngFor="let school of skeletonItems">
+  <div class="row">
+    <div class="col">
+      <h4
+        class="text-xl-start text-lg-start text-center text-muted f-w-600 mt-5"
+      >
+        <span class="placeholder col-2 bg-secondary"></span>
+      </h4>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div
+      *ngFor="let item of cardSkeletons"
+      class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3"
+    >
+      <div class="card card-bg-dark" style="width: auto">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-10"></span>
+          </h5>
+          <h6 class="card-subtitle placeholder-glow">
+            <span class="placeholder col-8"></span>
+          </h6>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-12"></span>
+            <span class="placeholder col-7"></span>
+          </p>
+          <a href="" class="text-link certificate-link placeholder col-6"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

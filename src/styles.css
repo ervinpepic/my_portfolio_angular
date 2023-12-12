@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #2c333e !important;
+  }
+  .f-w-600 {
+    font-weight: 700;
+  }
+  
+  .f-w-500 {
+    font-weight: 600;
+  }
+  

@@ -1,0 +1,59 @@
+.icon-size {
+  font-size: 2.5rem;
+  color: #d8dadd;
+}
+
+.icon-size:hover {
+  opacity: 0.4;
+  color: #ebecee;
+  transition: 0.3s;
+}
+
+.soc-icon-size {
+  font-size: 2.2rem;
+  color: #d8dadd;
+  text-decoration: none;
+}
+
+.soc-icon-size:hover {
+  opacity: 0.4;
+  color: #ebecee;
+  transition: 0.3s;
+}
+
+.icon-size-cert {
+  font-size: 3.5rem;
+  color: #d8dadd;
+}
+
+.icon-display {
+  display: inline-grid;
+}
+
+.vertical-line {
+  border-right: 2px solid #d8dadd;
+  height: 37px;
+  display: inline-grid;
+}
+
+.vertical-line-soc-icon {
+  border-right: 2px solid #d8dadd;
+  display: inline-grid;
+  height: 30px;
+}
+
+.f-w-400 {
+  font-weight: 500;
+}
+
+.text-muted {
+  font-family: sans-serif;
+  color: #d8dadd !important;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  opacity: 0.4;
+  color: #ebecee;
+  transition: 0.3s;
+}
